@@ -28,30 +28,30 @@ $hight_burger_line: 2px;
     }
     &__burger {
         position: relative;
-        &.active{
-            :first-child {
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-        
-            :last-child {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
-        
-            :nth-child(2) {
-                position: absolute;
-                left: 0;
-                top: 50% - $hight_burger_line/2;
-            }
-            span {
-                width: 40px;
-                height: $hight_burger_line;
-                background-color: #fff;
-            }
-        }   
+
+        span {
+            width: 40px;
+            height: $hight_burger_line;
+            background-color: #fff;
+        }
+        :first-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+        :last-child {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    
+        :nth-child(2) {
+            position: absolute;
+            left: 0;
+            top: 50% - $hight_burger_line/2;
+        }
+    
         &.active {
             :first-child{
                 transform: rotate(45deg);
